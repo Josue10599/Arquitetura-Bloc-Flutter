@@ -103,20 +103,11 @@ class _MovieDetailState extends State<MovieDetail> {
                     Container(margin: EdgeInsets.only(top: 8.0, bottom: 8.0)),
                     Row(
                       children: <Widget>[
-                        Icon(
-                          Icons.favorite,
-                          color: Colors.red,
-                        ),
-                        Container(
-                          margin: EdgeInsets.only(
-                            left: 10.0,
-                            right: 10.0,
-                          ),
-                        ),
-                        Text(
-                          releaseDate,
-                          style: TextStyle(fontSize: 10.0),
-                        )
+                        Icon(Icons.favorite, color: Colors.red),
+                        Container(margin: EdgeInsets.only(left: 10.0, right: 10.0)),
+                        Text(voteAverage, style: TextStyle(fontSize: 18.0)),
+                        Container(margin: EdgeInsets.only(left: 10.0, right: 10.0)),
+                        Text(releaseDate, style: TextStyle(fontSize: 18.0)),
                       ],
                     ),
                     Container(margin: EdgeInsets.only(top: 8.0, bottom: 8.0)),
